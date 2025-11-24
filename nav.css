@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.nav {
+  height: 15%;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 40px 10px 20px;
+  gap: 20px;
+  box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px,
+    rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
+    rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px,
+    rgba(42, 51, 70, 0.04) 0px 6px 6px -3px,
+    rgba(14, 63, 126, 0.04) 0px 12px 12px -6px,
+    rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+}
+.infoart {
+  font-size: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #f57d1f;
+  padding-left: 50px;
+}
+
+.searchbar {
+  height: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.menu {
+  width: 100%;
+  height: auto;
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 35px;
+}
+.menu > a {
+  text-decoration: none;
+  color: #434348;
+}
+.icon {
+  width: 35%;
+  height: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.search {
+  padding-left: 410px;
+  /* padding-top: 5px; */
+}
+.cartmenu {
+  font-size: 10px;
+  /* height: 10%;
+  padding-bottom: 30px; */
+  display: flex;
+  justify-content: space-around;
+  gap: 4px;
+}
+.cartmenu > a {
+  text-decoration: none;
+  color: black;
+}
+select {
+  border: none;
+  outline: none;
+  font-size: 10px;
+}
+@media (max-width: 1024px) {
+  .infoart {
+    font-size: 35px;
+    padding-left: 30px;
+  }
+
+  .searchbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .search {
+    padding-left: 0;
+  }
+
+  .menu {
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .infoart {
+    font-size: 28px;
+    padding-left: 20px;
+  }
+
+  .nav {
+    padding: 10px 20px 10px 10px;
+    gap: 15px;
+  }
+
+  .menu {
+    font-size: 0.9rem;
+  }
+
+  .icon {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .cartmenu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .infoart {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+
+  .nav {
+    padding: 10px 15px 10px 5px;
+  }
+
+  .menu {
+    font-size: 0.8rem;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cartmenu {
+    font-size: 0.9rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
